@@ -1,0 +1,174 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('hills.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 40px 0; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.form-title {
+  font-size: 2.5em;
+  font-family: 'Carter One', cursive;
+  font-weight: bold;
+  color: #005ef4;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); 
+  margin-bottom: 30px; 
+  text-align: center;
+  user-select: none;
+}
+
+form {
+  border: 2px solid white;
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 10px 50px 50px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 500px;
+  color: white;
+  background: rgba(255 255 255 / 0.05); 
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  font-family: 'Trade Winds';
+  color: #000000;
+}
+
+.icon {
+  color: #FFD700;
+  font-size: 1.4em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon color inside labels */
+.form-group label .icon {
+  color: #FFD700;  
+  font-size: 1.2em;
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+/* Label text */
+.form-group label {
+  font-family: 'Amaranth', sans-serif;
+  font-weight: bold;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgb(2, 49, 50);
+  
+}
+
+.live-preview {
+  font-size: 2.2em;
+  color: #126c07;
+}
+
+.container {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box {
+  background-color: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  width: 95%;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1em;
+  transition: 0.3s;
+  outline: none;
+}
+
+.input-box:focus {
+  border-color: #404dff;
+  box-shadow: 0 0 8px 5px #39bcd9, 0 0 15px #404dff;
+}
+
+.gender-group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 16px;
+}
+
+.gender-group > label {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgb(0, 0, 0);
+}
+
+.gender-group input[type="radio"] {
+  width: auto;
+  margin: 0;
+  cursor: pointer;
+}
+
+.gender-group label.radio-label {
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+#charCount {
+  text-align: right;
+  font-size: 0.9em;
+  color: #000000;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+button {
+  background: linear-gradient(to right, #f12711, #f5af19);
+  color: white;
+  padding: 14px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+button:hover {
+  background: linear-gradient(to left, #f7971e, #ffd200);
+  color: black;
+}
+
+@media (max-width: 480px) {
+  form {
+    padding: 20px;
+  }
+}
